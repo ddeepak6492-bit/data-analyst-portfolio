@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Datta Deepak's portfolio for Data Analyst and Reporting Analyst opportunities.">
+  <title>Datta Deepak | Data Analyst Portfolio</title>
+
+  <style>
+    :root {
+      --navy: #14243e;
+      --blue: #2563eb;
+      --light: #f3f6fb;
+      --white: #ffffff;
+      --text: #273449;
+      --muted: #64748b;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--light);
+    }
+
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(1080px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      min-height: 68px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding: 12px 0;
+    }
+
+    .logo {
+      color: white;
+      font-weight: bold;
+      font-size: 21px;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      list-style: none;
+    }
+
+    nav ul a {
+      color: white;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(130deg, #14243e, #285bb0);
+      color: white;
+      padding: 85px 0;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 56px);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .hero h2 {
+      color: #bfdbfe;
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #e2e8f0;
+      margin-bottom: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      padding: 10px 17px;
+      border-radius: 7px;
+      margin: 5px 8px 5px 0;
+      font-weight: bold;
+    }
+
+    .button-light {
+      background: white;
+      color: var(--navy);
+    }
+
+    section {
+      padding: 60px 0;
+      scroll-margin-top: 85px;
+    }
+
+    .section-title {
+      color: var(--navy);
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      margin-bottom: 26px;
+    }
+
+    .panel, .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 22px;
+    }
+
+    .stats {
+      display: grid;
+      gap: 12px;
+    }
+
+    .stat {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 16px;
+      border-radius: 10px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 21px;
+      color: var(--blue);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      margin-bottom: 9px;
+    }
+
+    .card p { margin-bottom: 10px; }
+    .card ul { padding-left: 20px; }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 13px 0;
+    }
+
+    .tag {
+      background: #eaf1ff;
+      color: #1d4ed8;
+      border-radius: 20px;
+      padding: 4px 10px;
+      font-size: 13px;
+    }
+
+    .muted { color: var(--muted); }
+
+    .certificate-note {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .contact {
+      background: var(--navy);
+      color: white;
+      padding: 28px;
+      border-radius: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact a { color: #bfdbfe; }
+
+    footer {
+      background: #0b1629;
+      color: #cbd5e1;
+      padding: 22px;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .about-grid, .grid { grid-template-columns: 1fr; }
+      nav { align-items: flex-start; }
+      nav ul { gap: 10px; }
+      .hero { padding: 60px 0; }
+      section { padding: 42px 0; }
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <nav aria-label="Main navigation">
+      <a class="logo" href="#home">Datta Deepak</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Hi, I'm Datta Deepak</h1>
+      <h2>Aspiring Data Analyst | Reporting Analyst</h2>
+      <p>
+        BCA graduate with internship experience in data analytics,
+        Python-based data preparation, Excel reporting and Power BI
+        dashboards. Interested in transforming data into useful insights.
+      </p>
+      <a class="button button-light" href="#projects">Explore Projects</a>
+      <a class="button" href="#contact">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-intro">My background and career interests</p>
+
+      <div class="about-grid">
+        <div class="panel">
+          <p>
+            I am a Bachelor of Computer Applications (BCA) graduate
+            interested in data analysis, business reporting and data
+            visualization.
+          </p>
+          <br>
+          <p>
+            I completed a six-month internship as a Full Stack Data
+            Analyst Intern at Analogica Software Development Pvt. Ltd.,
+            Bangalore, from July 2025 to December 2025.
+          </p>
+          <br>
+          <p>
+            I am looking for entry-level Data Analyst and Reporting
+            Analyst opportunities where I can apply my technical skills,
+            learn from experienced teams and contribute to data-driven work.
+          </p>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>7.54 / 10</strong>
+            BCA CGPA
+          </div>
+          <div class="stat">
+            <strong>6 Months</strong>
+            Internship experience
+          </div>
+          <div class="stat">
+            <strong>SQL · Excel · BI</strong>
+            Analytics tools
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-intro">Tools and technologies from my resume</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>SQL & Databases</h3>
+          <p class="muted">Querying and working with structured data.</p>
+          <div class="tags">
+            <span class="tag">SQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Joins</span>
+            <span class="tag">Aggregations</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Power BI</h3>
+          <p class="muted">Dashboard design and business reporting.</p>
+          <div class="tags">
+            <span class="tag">Dashboards</span>
+            <span class="tag">KPIs</span>
+            <span class="tag">Charts</span>
+            <span class="tag">Slicers</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Excel & Reporting</h3>
+          <p class="muted">Data preparation and report creation.</p>
+          <div class="tags">
+            <span class="tag">PivotTables</span>
+            <span class="tag">Lookup Functions</span>
+            <span class="tag">Charts</span>
+            <span class="tag">Validation</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Python & Development</h3>
+          <p class="muted">Data preparation and application development.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-intro">
+        Project summaries. Add links to your actual files as they become available.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Sales Performance Dashboard</h3>
+          <p><strong>Tools:</strong> Power BI, Excel</p>
+          <p>
+            A dashboard project focused on sales performance,
+            key metrics and visual reporting.
+          </p>
+          <div class="tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Reporting</span>
+          </div>
+          <p class="muted">Project files: to be added.</p>
+        </article>
+
+        <article class="card">
+          <h3>Pizza Sales Analysis</h3>
+          <p><strong>Tools:</strong> SQL, MySQL</p>
+          <p>
+            A SQL analysis project exploring sales measures,
+            order patterns and business questions.
+          </p>
+          <div class="tags">
+            <span class="tag">SQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Analysis</span>
+          </div>
+          <p class="muted">Project files: to be added.</p>
+        </article>
+
+        <article class="card">
+          <h3>Student Data Analysis</h3>
+          <p><strong>Tools:</strong> Python, Pandas, Excel</p>
+          <p>
+            A data analysis project focused on data preparation
+            and examining student performance patterns.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Excel</span>
+          </div>
+          <p class="muted">Project files: to be added.</p>
+        </article>
+
+        <article class="card">
+          <h3>Inventory Management System</h3>
+          <p><strong>Tools:</strong> PHP, MySQL</p>
+          <p>
+            An application project focused on inventory records
+            and database operations.
+          </p>
+          <div class="tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <p class="muted">Project files: to be added.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="internship">
+    <div class="container">
+      <h2 class="section-title">Internship Experience</h2>
+      <p class="section-intro">Professional experience</p>
+
+      <article class="card">
+        <h3>Full Stack Data Analyst Intern</h3>
+        <p><strong>Analogica Software Development Pvt. Ltd.</strong></p>
+        <p class="muted">Bangalore · July 2025 – December 2025</p>
+        <ul>
+          <li>Supported Python-based data preparation and automation.</li>
+          <li>Used Excel for validation and operational reporting.</li>
+          <li>Supported interactive Power BI dashboards for KPI reporting.</li>
+          <li>Maintained documentation and completed assigned deliverables.</li>
+        </ul>
+      </article>
+
+      <article class="card" style="margin-top:20px">
+        <h3>Internship Completion Certificate</h3>
+        <p>
+          Full Stack Data Analyst Intern<br>
+          Analogica Software Development Pvt. Ltd.<br>
+          July 2025 – December 2025
+        </p>
+        <a class="button" href="internship-certificate.jpeg"
+           target="_blank" rel="noopener noreferrer">
+          View Internship Certificate
+        </a>
+        <p class="certificate-note">
+          The certificate link works after the image is uploaded
+          to the same repository folder as this HTML file.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education & Certifications</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Bachelor of Computer Applications</h3>
+          <p>Sri Siddhartha Institute of Business Management</p>
+          <p>Tumkur University</p>
+          <p><strong>Graduated:</strong> August 2025</p>
+          <p><strong>CGPA:</strong> 7.54 / 10</p>
+        </article>
+
+        <article class="card">
+          <h3>Certifications</h3>
+          <p>
+            Add only the certifications you have genuinely completed
+            and can verify.
+          </p>
+          <p class="muted">
+            Include the course or certificate name, issuing organization,
+            completion date and credential link where available.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-intro">
+        Open to suitable entry-level Data Analyst and Reporting Analyst roles.
+      </p>
+
+      <div class="contact">
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:ddeepak6492@gmail.com">ddeepak6492@gmail.com</a>
+        </p>
+        <p><strong>Location:</strong> Hindupur, Andhra Pradesh, India</p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a href="https://linkedin.com/in/DattaDeepak"
+             target="_blank" rel="noopener noreferrer">
+            DattaDeepak
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Datta Deepak | Data Analyst Portfolio</p>
+</footer>
+</body>
+</html>
